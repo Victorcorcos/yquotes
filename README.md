@@ -56,9 +56,9 @@ df = client.get_quote(ticker, {
 where...
 
 * period (p):
-  * `'d'` => Day
-  * `'w'` => Week
-  * `'m'` => Month
+  * `'d'` => Daily
+  * `'w'` => Weekly
+  * `'m'` => Monthly
 
 * start_date (s):
   * Date in format: 'yyyy-mm-dd'
