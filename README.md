@@ -37,9 +37,9 @@ ticker = 'TSLA' # For Example
 
 ```rb
 df = client.get_quote(ticker, {
-	period: 'm',
-	start_date: '2017-01-02',
-	end_date: '2017-03-31'
+  period: 'm',
+  start_date: '2017-01-02',
+  end_date: '2017-03-31'
 })
 ```
 
@@ -47,18 +47,18 @@ df = client.get_quote(ticker, {
 
 ```rb
 df = client.get_quote(ticker, {
-	p: 'd',
-	s: '2017-01-02',
-	e: '2017-03-31'
+  p: 'd',
+  s: '2017-01-02',
+  e: '2017-03-31'
 })
 ```
 
 where...
 
 * period (p):
-  * 'd' => Day
-  * 'w' => Week
-  * 'm' => Month
+  * `'d'` => Day
+  * `'w'` => Week
+  * `'m'` => Month
 
 * start_date (s):
   * Date in format: 'yyyy-mm-dd'
