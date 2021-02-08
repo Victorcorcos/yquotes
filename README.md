@@ -26,21 +26,46 @@ Or install it yourself as:
 
 ## Usage
 
-	client = YQuotes::Client.new
+1) Initial config
 
-	df = client.get_quote(ticker, {
-		period: 'm',
-		start_date: '2017-01-02',
-		end_date: '2017-03-31'
-		})
+```rb
+client = YQuotes::Client.new
+ticker = 'TSLA' # For Example
+```
 
-	OR
+2) Capturing stock quotes
 
-	df = client.get_quote(ticker, {
-		p: 'd',
-		s: '2017-01-02',
-		e: '2017-03-31'
-		})
+```rb
+df = client.get_quote(ticker, {
+	period: 'm',
+	start_date: '2017-01-02',
+	end_date: '2017-03-31'
+})
+```
+
+> OR
+
+```rb
+df = client.get_quote(ticker, {
+	p: 'd',
+	s: '2017-01-02',
+	e: '2017-03-31'
+})
+```
+
+where...
+
+* period (p):
+  * 'd' => Day
+  * 'w' => Week
+  * 'm' => Month
+
+* start_date (s):
+  * Date in format: 'yyyy-mm-dd'
+
+* end_date (e):
+  * Date in format: 'yyyy-mm-dd'
+
 
 ## Development
 
